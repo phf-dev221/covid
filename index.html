@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire de santé</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Formulaire de dépistage covid-19</h1>
+    <form method="POST" action="back.php">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse" required><br><br>
+
+        <label for="age">Age :</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label>Sexe :</label>
+        <div class="radio-group">
+            <label for="homme">Homme</label>
+            <input type="radio" id="homme" name="sexe" value="homme" required>
+            <label for="femme">Femme</label><br><br>
+            <input type="radio" id="femme" name="sexe" value="femme" required>
+        </div>
+
+        <label for="poids">Poids (en kg) :</label>
+        <input type="number" id="poids" name="poids" required><br><br>
+
+        <label for="taille">Taille (en cm) :</label>
+        <input type="number" id="taille" name="taille" required><br><br>
+
+        <label>Température (°C) :</label>
+        <input type="number" id="temperature" name="temperature" step="0.1" required><br><br>
+
+        <label for="maux_tete">Maux de tête :</label>
+        <div class="radio-group">
+            <label for="maux_tete_oui">Oui</label>
+            <input type="radio" id="maux_tete_oui" name="maux_tete" value="oui">
+            <label for="maux_tete_non">Non</label><br><br>
+            <input type="radio" id="maux_tete_non" name="maux_tete" value="non">
+        </div>
+
+        <label for="diarrhee">Diarrhée :</label>
+        <div class="radio-group">
+            <label for="diarrhee_oui">Oui</label>
+            <input type="radio" id="diarrhee_oui" name="diarrhee" value="oui">
+            <label for="diarrhee_non">Non</label><br><br>
+            <input type="radio" id="diarrhee_non" name="diarrhee" value="non">
+        </div>
+
+        <label for="toux">Toux :</label>
+        <div class="radio-group">
+            <label for="toux_oui">Oui</label>
+            <input type="radio" id="toux_oui" name="toux" value="oui">
+            <label for="toux_non">Non</label><br><br>
+            <input type="radio" id="toux_non" name="toux" value="non">
+        </div>
+
+        <label for="odorat">Perte de l'odorat :</label>
+        <div class="radio-group">
+            <label for="odorat_oui">Oui</label>
+            <input type="radio" id="odorat_oui" name="odorat" value="oui">
+            <label for="odorat_non">Non (pas de perte d'odorat)</label><br><br>
+            <input type="radio" id="odorat_non" name="odorat" value="non">
+        </div>
+
+        <input type="submit" value="Soumettre">
+    </form>
+
+    

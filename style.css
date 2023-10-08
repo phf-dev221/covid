@@ -1,0 +1,91 @@
+/* Style général pour le formulaire */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    /*text-align: center;*/
+   /* width: 50%;*/
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Style pour les étiquettes et les champs de saisie */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+/* Style pour les boutons radio */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-bottom: 15px;
+}
+
+.radio-group label {
+    margin: 0;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Style pour le bouton de soumission */
+input[type="submit"] {
+    background-color: #333;
+    margin-left: 42%;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Style pour les messages de succès */
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+}
